@@ -2,7 +2,7 @@
 
 This repository contains the Python implementation using the PyTorch framework to learn quadratic embedding for nonlinear dynamics that are asymptotic stable. It is based on the results presented in [1].The approach is built upon the hypothesis that smooth nonlinear systems can be written as quadratic systems in an appropriate coordinate systems [2] and importantly, that coordinate systems can be finite dimensional even for the systems having continous spectrum unlike Koopman embedding [3]. We further explored the parameterization proposed in [4] to learn stable dynamics for the embedding space.
 
-![Learned Lotka Volterra dynamics from data using linear and quadratic embeddings](./Imgs/linearvsquadratic_embs.gif)
+![Learned Lotka Volterra dynamics from data using linear and quadratic embeddings](imgs/linearvsquadratic_embs.gif)
 
 The important steps of the methodology are:
 
