@@ -4,8 +4,7 @@ source .venv/bin/activate
 
 python --version 
 
-EPOCHS=20
-EPOCHS_DECODER=600
+EPOCHS=	12000
 
 
 DIR="./Results"
@@ -25,11 +24,11 @@ DIR="./Results"
  cd Examples/Pendulum/
  uv run python Example_Pendulum_Dissipative.py --confi_model linear --epochs $EPOCHS --latent_dim 3
  echo ""
-#  uv run python Example_Pendulum_Dissipative.py --confi_model quad --epochs $EPOCHS --latent_dim 3
+ uv run python Example_Pendulum_Dissipative.py --confi_model quad --epochs $EPOCHS --latent_dim 3
  echo ""
-#  uv run python Example_Pendulum_Dissipative.py --confi_model quad_opinf --epochs $EPOCHS --latent_dim 2
+ uv run python Example_Pendulum_Dissipative.py --confi_model quad_opinf --epochs $EPOCHS --latent_dim 2
  echo ""
-#  jupyter nbconvert --execute --to notebook --inplace pendulum_error_plots.ipynb
+ jupyter nbconvert --execute --to notebook --inplace pendulum_error_plots.ipynb
  cd ../..
  pwd
 
@@ -39,11 +38,11 @@ DIR="./Results"
 
  cd Examples/Lotka_Volterra/
  uv run python Example_LV_Dissipative.py --confi_model linear --epochs $EPOCHS --latent_dim 3
-#  echo ""
-#  uv run python Example_LV_Dissipative.py --confi_model quad --epochs $EPOCHS --latent_dim 3
-#  echo ""
-#  uv run python Example_LV_Dissipative.py --confi_model quad_opinf --epochs $EPOCHS --latent_dim 2
-#  echo ""
-#  jupyter nbconvert --execute --to notebook --inplace lv_error_plots.ipynb
+ echo ""
+ uv run python Example_LV_Dissipative.py --confi_model quad --epochs $EPOCHS --latent_dim 3
+ echo ""
+ uv run python Example_LV_Dissipative.py --confi_model quad_opinf --epochs $EPOCHS --latent_dim 2
+ echo ""
+ jupyter nbconvert --execute --to notebook --inplace lv_error_plots.ipynb
  cd ../..
  pwd
